@@ -7,27 +7,22 @@ namespace Examples
     {
         static void Main(string[] args)
         {
-            Wr($"Date is {Date.Now}");
-            Wr($"Date is {DateTime.Now.ToDate()}");
-            Wr($"Minimum Date is {DateTime.MinValue.ToDate()}");
-            Wr($"Maximum Date is {DateTime.MaxValue.ToDate()}");
-            Wr($"Today + 1 hour 59 minutes is {Date.Now + new TimeSpan(1, 59, 0)}");
-            Wr($"Current time cast to Date is {(Date)DateTime.Now}");
-            Wr($"Current date cast to DateTime is {(DateTime)Date.Now}");
+            Console.WriteLine($"Date is {Date.Now}");
+            Console.WriteLine($"Date is {DateTime.Now.ToDate()}");
+            Console.WriteLine($"Minimum Date is {DateTime.MinValue.ToDate()}");
+            Console.WriteLine($"Maximum Date is {DateTime.MaxValue.ToDate()}");
+            Console.WriteLine($"Today + 1 hour 59 minutes is {Date.Now + new TimeSpan(1, 59, 0)}");
+            Console.WriteLine($"Current time cast to Date is {(Date)DateTime.Now}");
+            Console.WriteLine($"Current date cast to DateTime is {(DateTime)Date.Now}");
 
             Date newYearsEve = new Date(2020, 12, 31);
             Date christmas = new Date(2020, 12, 24);
             string beforeOrAfter = christmas < newYearsEve ? "before" : "after";
-            Wr($"Christmas is {beforeOrAfter} New Years Eve");
+            Console.WriteLine($"Christmas is {beforeOrAfter} New Years Eve");
 
             string dateString = "2020-12-31";
-            Wr($"Parsing the date {dateString} gives {Date.Parse(dateString)}");
+            Console.WriteLine($"Parsing the date {dateString} gives {Date.Parse(dateString)}");
             Console.ReadLine();
-        }
-
-        private static void Wr(string str)
-        {
-            Console.WriteLine(str);
         }
     }
 }

@@ -2,10 +2,22 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.0;net40;net45;netcoreapp1.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Balint Nagy</Authors>
+    <Company>Balint Nagy</Company>
+    <Description>Implements the Date type with parsing and DateTime conversion support</Description>
+    <Copyright>Balint Nagy</Copyright>
+    <PackageId>Date</PackageId>
+    <Product>Date</Product>
+    <PackageProjectUrl>https://github.com/balintn22/Date</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/balintn22/Date/blob/main/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/balintn22/Date</RepositoryUrl>
+    <PackageTags>Date DateTime</PackageTags>
+    <PackageReleaseNotes>Initial implementation.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
 </Project>
