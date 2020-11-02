@@ -6,7 +6,7 @@ Implements Date support without the need to neglect the time part.
 - Conversions to/from DateTime
 - Comparisons between Date values as well as Date and DateTime values.
 
-##Examples
+## Examples
     Console.WriteLine($"Date is {Date.Now}");
     Console.WriteLine($"Date is {DateTime.Now.ToDate()}");
     Console.WriteLine($"Minimum Date is {DateTime.MinValue.ToDate()}");
@@ -14,7 +14,7 @@ Implements Date support without the need to neglect the time part.
     Console.WriteLine($"Today + 1 hour 59 minutes is {Date.Now + new TimeSpan(1, 59, 0)}");
     Console.WriteLine($"Current time cast to Date is {(Date)DateTime.Now}");
     Console.WriteLine($"Current date cast to DateTime is {(DateTime)Date.Now}");
-
+    
     Date newYearsEve = new Date(2020, 12, 31);
     Date christmas = new Date(2020, 12, 24);
     string beforeOrAfter = christmas < newYearsEve ? "before" : "after";
