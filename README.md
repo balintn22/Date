@@ -23,3 +23,11 @@ Implements Date support without the need to neglect the time part.
     string dateString = "2020-12-31";
     Console.WriteLine($"Parsing the date {dateString} gives {Date.Parse(dateString)}");
     Console.ReadLine();
+
+## Framework Support
+- .Net Framework 4.0, 4.5
+- .Net Core 1.0+
+- .Net Standard 1.0+
+
+## Installation
+Include the nuget package "Date" in your project.
