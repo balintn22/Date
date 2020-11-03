@@ -15,6 +15,7 @@ namespace Examples
             Console.WriteLine($"Current time cast to Date is {(Date)DateTime.Now}");
             Console.WriteLine($"Current date cast to DateTime is {(DateTime)Date.Now}");
 
+            // Comparisons between two Dates as well as between a Date and a DateTime are supported
             Date newYearsEve = new Date(2020, 12, 31);
             Date christmas = new Date(2020, 12, 24);
             string beforeOrAfter = christmas < newYearsEve ? "before" : "after";
@@ -22,6 +23,11 @@ namespace Examples
 
             string dateString = "2020-12-31";
             Console.WriteLine($"Parsing the date {dateString} gives {Date.Parse(dateString)}");
+
+            // Additions and subtractions are supported via TimeSpans
+            var fourDays = new TimeSpan(4, 0, 0, 0);
+            Console.WriteLine($"Four days before Christmas is {(Date)(christmas - fourDays)}");
+
             Console.ReadLine();
         }
     }

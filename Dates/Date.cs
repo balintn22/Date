@@ -22,10 +22,7 @@ namespace Dates
 
         public Date(int years, int months, int days)
         {
-            if (months < 1 || months > 12)
-                throw new ArgumentException("Value must be between 1 and 12");
-
-            // TODO: Implement days validation
+            // TODO: Implement validation
 
             Year = years;
             Month = months;
