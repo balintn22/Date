@@ -5,7 +5,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Balint Nagy</Authors>
     <Company>Balint Nagy</Company>
-    <Description>Implements the Date type with parsing and DateTime conversion support</Description>
+    <Description>Implements Date support without the need to neglect the time part.
+Conversion to ISO and other formatted date strings; parsing, conversions to/from DateTime, comparisons.
+Additions and subtractions using TimeSpans.</Description>
     <Copyright>Balint Nagy</Copyright>
     <PackageId>Date</PackageId>
     <Product>Date</Product>
