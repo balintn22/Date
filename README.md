@@ -40,4 +40,5 @@ Using Visual Studio Nuget Package Manager (UI):
 - Install the package in your project
 
 Using Visual Studio Package Manager Console:
+
     Install-Package Date -project MyProject
