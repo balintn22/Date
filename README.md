@@ -35,4 +35,9 @@ Implements Date support without the need to neglect the time part.
 - .Net Standard 1.0+
 
 ## Installation
-Include the nuget package "Date" in your project.
+Using Visual Studio Nuget Package Manager (UI):
+- Search for "Date Balint"
+- Install the package in your project
+
+Using Visual Studio Package Manager Console:
+    Install-Package Date -project MyProject
