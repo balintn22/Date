@@ -264,6 +264,46 @@ namespace Dates
             }
         }
 
+        public static Date Today { get { return Date.Now; } }
+
+        public static Date UtcToday { get { return Date.UtcNow; } }
+
+        public static Date Yesterday
+        {
+            get
+            {
+                DateTime dt = DateTime.Now - TimeSpan.FromDays(1);
+                return new Date(dt.Year, dt.Month, dt.Day);
+            }
+        }
+
+        public static Date UtcYesterday
+        {
+            get
+            {
+                DateTime dt = DateTime.UtcNow - TimeSpan.FromDays(1);
+                return new Date(dt.Year, dt.Month, dt.Day);
+            }
+        }
+
+        public static Date Tomorrow
+        {
+            get
+            {
+                DateTime dt = DateTime.Now + TimeSpan.FromDays(1);
+                return new Date(dt.Year, dt.Month, dt.Day);
+            }
+        }
+
+        public static Date UtcTomorrow
+        {
+            get
+            {
+                DateTime dt = DateTime.UtcNow + TimeSpan.FromDays(1);
+                return new Date(dt.Year, dt.Month, dt.Day);
+            }
+        }
+
         public static Date MinValue
         {
             get { return DateTime.MinValue.ToDate(); }
