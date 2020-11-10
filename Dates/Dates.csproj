@@ -15,9 +15,11 @@ Additions and subtractions using TimeSpans.</Description>
     <PackageLicenseUrl>https://github.com/balintn22/Date/blob/main/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/balintn22/Date</RepositoryUrl>
     <PackageTags>Date DateTime</PackageTags>
-    <PackageReleaseNotes>Initial implementation.</PackageReleaseNotes>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <PackageReleaseNotes>Added strong naming.</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongNamingKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
