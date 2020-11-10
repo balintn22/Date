@@ -154,7 +154,7 @@ namespace Dates
         #endregion Equality Checks
 
 
-        #region Implement IComparable<Date>, IComparable<DateTime> and IComparable
+        #region Implement IComparable<Date>, IComparable<DateTime>
 
         // Return a this - other order sign value
         public int CompareTo(Date other)
@@ -183,7 +183,7 @@ namespace Dates
             return 0;
         }
 
-        #endregion Implement IComparable<Date>, IComparable<DateTime> and IComparable
+        #endregion Implement IComparable<Date>, IComparable<DateTime>
 
 
         #region Conversions

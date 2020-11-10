@@ -130,7 +130,7 @@ namespace Dates.Tests
         }
 
         [TestMethod]
-        public void Date_DateTimeComparision_Test()
+        public void Date_DateTimeComparison_Test()
         {
             Date date = Date.Parse("2018.12.31");
             DateTime dt = new DateTime(2019, 01, 01, 11, 59, 59);
