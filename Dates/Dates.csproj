@@ -14,7 +14,7 @@ Additions and subtractions using TimeSpans.</Description>
     <PackageProjectUrl>https://github.com/balintn22/Date</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/balintn22/Date/blob/main/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/balintn22/Date</RepositoryUrl>
-    <PackageTags>Date DateTime</PackageTags>
+    <PackageTags>Date DateTime DateSpan</PackageTags>
     <PackageReleaseNotes>Added DateSpan's</PackageReleaseNotes>
     <Version>1.0.6</Version>
     <AssemblyVersion>1.0.6.0</AssemblyVersion>
