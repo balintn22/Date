@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <Description>Implements Date support without hassling with the time part.
+
+Conversion to ISO and other formatted date strings; parsing, conversions to/from DateTime, comparisons.
+
+Additions and subtractions using TimeSpans.</Description>
   </PropertyGroup>
 
   <ItemGroup>
