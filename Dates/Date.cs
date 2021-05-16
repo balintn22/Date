@@ -201,6 +201,18 @@ namespace Dates
         #endregion Conversions
 
 
+        #region Operations
+
+        /// <summary>Calculates the DateSpen between two Dates.</summary>
+        public static DateSpan operator -(Date date, Date otherDate)
+        {
+            TimeSpan diff = (DateTime)date - otherDate;
+            return (DateSpan)diff;
+        }
+
+        #endregion Operations
+
+
         #region Operations with TimeSpans
 
         public static DateTime operator +(Date date, TimeSpan span)

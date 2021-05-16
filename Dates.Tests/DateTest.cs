@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
 
@@ -88,7 +89,7 @@ namespace Dates.Tests
         }
 
         [TestMethod]
-        public void Date_Subtraction_Test()
+        public void Date_TimeSpan_Subtraction_Test()
         {
             Date _base = Date.Parse("2019.02.01");
             Date prevDay = (Date)(_base - TimeSpan.FromDays(1));
@@ -98,6 +99,20 @@ namespace Dates.Tests
             Assert.AreEqual(31, prevDay.Day);
             Assert.AreEqual(1, prevMonth.Month);
             Assert.AreEqual(2018, prevYear.Year);
+        }
+
+        [TestMethod]
+        public void Date_Date_Subtraction_Test()
+        {
+            Date _base = Date.Parse("2019.02.01");
+            Date aDayEarlier = Date.Parse("2019.01.31");
+            Date aMonthEarlier = Date.Parse("2019.01.01");
+            Date aYearEarlier = Date.Parse("2018.02.01");
+
+            (_base - _base).Should().BeEquivalentTo(new DateSpan(0));
+            (_base - aDayEarlier).Should().BeEquivalentTo(new DateSpan(1));
+            (_base - aMonthEarlier).Should().BeEquivalentTo(new DateSpan(31));
+            (_base - aYearEarlier).Should().BeEquivalentTo(new DateSpan(365));
         }
 
         [TestMethod]
