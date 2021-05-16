@@ -7,7 +7,7 @@
     <Company>Balint Nagy</Company>
     <Description>Implements Date support without the need to neglect the time part.
 Conversion to ISO and other formatted date strings; parsing, conversions to/from DateTime, comparisons.
-Additions and subtractions using TimeSpans.</Description>
+Additions and subtractions using TimeSpans and DateSpans.</Description>
     <Copyright>Balint Nagy</Copyright>
     <PackageId>Date</PackageId>
     <Product>Date</Product>
