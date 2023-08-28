@@ -1,5 +1,7 @@
 # Date
 
+New in v1.0.8: Added Date.FromDateTime(DateTime dt) conversion.
+
 Implements Date support without the need to neglect the time part.
 - Conversion to ISO and other formatted date strings
 - Parsing
@@ -15,6 +17,7 @@ Implements Date support without the need to neglect the time part.
     Console.WriteLine($"Today + 1 hour 59 minutes is {Date.Now + new TimeSpan(1, 59, 0)}");
     Console.WriteLine($"Current time cast to Date is {(Date)DateTime.Now}");
     Console.WriteLine($"Current date cast to DateTime is {(DateTime)Date.Now}");
+    Console.WriteLine($"Current date cast to DateTime is {DateTime.FromDateTime(Date.Now)}");
     
     // Comparisions between two Dates as well as between a Date and a DateTime are supported
     Date newYearsEve = new Date(2020, 12, 31);
@@ -30,7 +33,7 @@ Implements Date support without the need to neglect the time part.
     Console.WriteLine($"Four days before Christmas is {(Date)(christmas - fourDays)}");
 
 ## Framework Support
-- .Net Framework 4.0, 4.5
+- .Net Framework 4.0+
 - .Net Core 1.0+
 - .Net Standard 1.0+
 

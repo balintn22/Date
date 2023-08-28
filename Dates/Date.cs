@@ -198,6 +198,11 @@ namespace Dates
             return new Date(datetime.Year, datetime.Month, datetime.Day);
         }
 
+        public Date FromDateTime(DateTime datetime)
+        {
+            return new Date(datetime.Year, datetime.Month, datetime.Day);
+        }
+
         #endregion Conversions
 
 
