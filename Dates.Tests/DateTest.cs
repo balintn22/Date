@@ -171,9 +171,13 @@ namespace Dates.Tests
         [TestMethod]
         public void Date_ConversionFromDateTime_Test()
         {
-            Date date = Date.Parse("2018.12.31");
-
             Assert.AreEqual(Date.Parse("2018.12.31"), (Date)new DateTime(2018, 12, 31, 01, 02, 03));
+        }
+
+        [TestMethod]
+        public void Date_FromDateTime_Test()
+        {
+            Assert.AreEqual(Date.Parse("2018.12.31"), Date.FromDateTime(new DateTime(2018, 12, 31, 01, 02, 03)));
         }
     }
 }

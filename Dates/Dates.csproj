@@ -16,8 +16,8 @@ Additions and subtractions using TimeSpans and DateSpans.</Description>
     <RepositoryUrl>https://github.com/balintn22/Date</RepositoryUrl>
     <PackageTags>Date DateTime DateSpan</PackageTags>
     <PackageReleaseNotes>Added Date-Date subtraction.</PackageReleaseNotes>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.8.0</AssemblyVersion>
+    <Version>1.0.9</Version>
+    <AssemblyVersion>1.0.9.0</AssemblyVersion>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongNamingKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
