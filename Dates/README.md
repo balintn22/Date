@@ -1,5 +1,7 @@
 # Date
 
+v1.2.0: Added TimeSpanHelper.TryParseEx() and TimeSpanHelper.ParseEx() to support new time formats.
+
 v1.1.0: Added support for Net6, Net8, Net9
 
 v1.0.8: Added Date.FromDateTime(DateTime dt) conversion.
