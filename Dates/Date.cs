@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.ComponentModel;
+using System.Globalization;
 
 namespace Dates
 {
@@ -57,6 +58,11 @@ namespace Dates
             return DateTime.Parse(source).ToDate();
         }
 
+        public static Date Parse(string source, IFormatProvider formatProvider)
+        {
+            return DateTime.Parse(source, formatProvider).ToDate();
+        }
+
         public static bool TryParse(string source, out Date result)
         {
             DateTime dt;
@@ -68,6 +74,16 @@ namespace Dates
             return success;
         }
 
+        public static bool TryParse(string source, IFormatProvider formatProvider, DateTimeStyles dateTimeStyle, out Date result)
+        {
+            DateTime dt;
+            bool success = DateTime.TryParse(source, formatProvider, dateTimeStyle, out dt);
+            if (success)
+                result = dt.ToDate();
+            else
+                result = new Date(0, 0, 0);
+            return success;
+        }
 
         #region Empty Representation
 
