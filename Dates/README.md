@@ -1,5 +1,8 @@
 # Date
 
+v1.2.1: Added culture-specific parsing.
+        Updated dependencies.
+
 v1.2.0: Added TimeSpanHelper.TryParseEx() and TimeSpanHelper.ParseEx() to support new time formats.
 
 v1.1.0: Added support for Net6, Net8, Net9
